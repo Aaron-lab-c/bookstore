@@ -1,15 +1,5 @@
-<!doctype html>
-<html>
-<head>
-<title>書店</title>
-<meta charset="utf-8">
-</head>
-<body>
-<ul id="menu">
-  <li><a href="{% url 'main:main' %}">首頁</a></li>
-  <li><a href="{% url 'main:about' %}">關於</a></li>
-</ul>
-<h2>Django 說 -- Hello world!</h2>
+{% extends 'main/base.html' %}
+{% block heading %}首頁{% endblock %}
+{% block content %}
 <p>{{ like }}</p>
-</body>
-</html>
+{% endblock %}
