@@ -1,0 +1,3 @@
+# bookstore
+
+Django練習
